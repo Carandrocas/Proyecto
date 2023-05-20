@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Listado de Doctores</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <h1>Listado de Doctores</h1>
+  <div id="doctoresContainer"></div>
+
+  <script>
+    // Leer el archivo JSON de doctores
+    fetch('doctores.json')
+      .then(response => response.json())
+      .then(data => {
+        const doctoresContainer = document.getElementById('doctoresContainer');
+        data.forEach(doctor => {
+          const doctorDiv = document.createElement('div');
+          doctorDiv.innerHTML = `
+            <h2>${doctor.nombre} ${doctor.apellido}</h2>
+            <p><strong>Cédula:</strong> ${doctor.cedula}</p>
+            <p><strong>Especialidad:</strong> ${doctor.especialidad}</p>
+            <p><strong>Consultorio:</strong> ${doctor.consultorio}</p>
+            <p><strong>Correo de contacto:</strong> ${doctor.correo}</p>
+            <hr>
+          `;
+          doctoresContainer.appendChild(doctorDiv);
+        });
+      });
+  </script>
+</body>
+</html>
