@@ -1,0 +1,18 @@
+[
+  {
+    "nombre": "Pedro",
+    "apellido": "García",
+    "cedula": "1111111111",
+    "edad": 35,
+    "telefono": "555-1234",
+    "especialidad": "Medicina general"
+  },
+  {
+    "nombre": "Laura",
+    "apellido": "López",
+    "cedula": "2222222222",
+    "edad": 28,
+    "telefono": "555-5678",
+    "especialidad": "Dermatología"
+  }
+]
