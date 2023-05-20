@@ -1,0 +1,18 @@
+[
+  {
+    "nombre": "Juan",
+    "apellido": "Pérez",
+    "cedula": "1234567890",
+    "especialidad": "Medicina general",
+    "consultorio": "A-101",
+    "correo": "juan@example.com"
+  },
+  {
+    "nombre": "María",
+    "apellido": "Gómez",
+    "cedula": "9876543210",
+    "especialidad": "Cardiología",
+    "consultorio": "B-202",
+    "correo": "maria@example.com"
+  }
+]
