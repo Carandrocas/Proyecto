@@ -1,0 +1,45 @@
+[
+  {
+    "nombre": "Juan",
+    "apellido": "Pérez",
+    "cedula": "1234567890",
+    "especialidad": "Medicina general",
+    "consultorio": "101",
+    "correo": "juan@example.com"
+  },
+  {
+    "nombre": "María",
+    "apellido": "Gómez",
+    "cedula": "9876543210",
+    "especialidad": "Cardiología",
+    "consultorio": "102",
+    "correo": "maria@example.com"
+  },
+  {
+    "nombre": "Ana",
+    "apellido": "Garcia",
+    "cedula": "123451323",
+    "especialidad": "Radiologia",
+    "consultorio": "202",
+    "correo": "Agarci@example.com"
+  },
+  {
+      "nombre": "Nicolas",
+      "apellido": "Sanchez",
+      "cedula": "89152367",
+      "especialidad": "Psicologia",
+      "consultorio": "300",
+      "correo": "Sanchoni@example.com"
+
+  },
+  {
+  
+      "nombre": "Kevin",
+      "apellido": "Velez",
+      "cedula": "1012357288",
+      "especialidad": "Odontologia",
+      "consultorio": "301",
+      "correo": "Kvinvel@example.com"
+  }
+
+]

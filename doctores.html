@@ -3,31 +3,36 @@
 <head>
   <title>Listado de Doctores</title>
   <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="script.js"></script>
+  
 </head>
-<body>
-  <h1>Listado de Doctores</h1>
-  <div id="doctoresContainer"></div>
 
-  <script>
-    // Leer el archivo JSON de doctores
-    fetch('doctores.json')
-      .then(response => response.json())
-      .then(data => {
-        const doctoresContainer = document.getElementById('doctoresContainer');
-        data.forEach(doctor => {
-          const doctorDiv = document.createElement('div');
-          doctorDiv.innerHTML = `
-            <h2>${doctor.nombre} ${doctor.apellido}</h2>
-            <p><strong>Cédula:</strong> ${doctor.cedula}</p>
-            <p><strong>Especialidad:</strong> ${doctor.especialidad}</p>
-            <p><strong>Consultorio:</strong> ${doctor.consultorio}</p>
-            <p><strong>Correo de contacto:</strong> ${doctor.correo}</p>
-            <hr>
-          `;
-          doctoresContainer.appendChild(doctorDiv);
-        });
-      });
-  </script>
+<body>
+  <header>
+    <h1>CENTRO DE SALUD HOSPITAL PROYECTO BACK-END </h1>
+</header>
+<main class="tabla-container">
+    <table id="tabla-doctores">
+        <h2>LISTADO DE DOCTORES</h2>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Número de Cédula</th>
+                <th>Especialidad</th>
+                <th>Consultorio</th>
+                <th>Correo de contacto</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+    <div class="boton-container">
+        <input type="button" id="botonVolver" value="Volver">
+    </div>
+</main>
+
 </body>
+<script src="volver.js"></script>
+<script src="doctores.js"></script>
 </html>

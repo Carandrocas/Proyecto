@@ -5,24 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <title>Registro para Medicos</title>
+    <title>Registro para Doctores</title>
 </head>
 <body>
     <header>
-        <h1>CENTRO MEDICO PROYECTO BACK-END</h1>
+        <h1>CENTRO DE SALUD HOSPITAL PROYECTO BACK-END</h1>
     </header>
     <main>
-        <form id="doctorForm" onsubmit="submitDoctorForm(event)">
+        <form id="registro-doctores-form">
             <h2>REGISTRO DOCTORES</h2>
-            <label for="doctorName">Nombre:<span> *</span></label>
-            <input type="text" id="doctorName" required>
-            <label for="doctorLastName">Apellido:<span> *</span></label>
-            <input type="text" id="doctorLastName" required>
-            <label for="doctorCedula">Número de Cédula:<span> *</span></label>
-            <input type="text" id="doctorCedula" required>
-            <label for="doctorSpecialty">Especialidad requerida:<span> *</span></label>
-            <select id="doctorSpecialty">
+            <label for="nombre">Nombre:<span> *</span></label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="apellido">Apellido:<span> *</span></label>
+            <input type="text" id="apellido" name="apellido" required>
+            <label for="cedula">Número de Cédula:<span> *</span></label>
+            <input type="text" id="cedula" name="cedula" required>
+            <label for="especialidad">Especialidad requerida:<span> *</span></label>
+            <select id="especialidad" name="especialidad">
                 <option value="">------------------------  Seleccione la especialidad  ---------------------</option>
                 <option value="Medicina general">Medicina general</option>
                 <option value="Medicina interna">Cardiología</option>
@@ -33,10 +32,10 @@
                 <option value="Odontología veterinaria">Odontología </option>
                 <option value="Farmacología veterinaria">Radiologia</option>
             </select>
-            <label for="doctorOffice">Número de consultorio:<span> *</span></label>
-            <input type="number" id="doctorOffice" required>
-            <label for="doctorEmail">Correo de contacto:<span> *</span></label>
-            <input type="email" id="doctorEmail" required>
+            <label for="consultorio">Número de consultorio:<span> *</span></label>
+            <input type="number" id="consultorio" name="consultorio" required>
+            <label for="email">Correo de contacto:<span> *</span></label>
+            <input type="email" id="correo" name="correo" required>
             
             <input type="submit" value="Enviar">
         </form>
@@ -45,4 +44,6 @@
         </div>
     </main>
 </body>
+<script src="volver.js"></script>
+<script src="guardar-doctores.js"></script>
 </html>
