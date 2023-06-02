@@ -1,0 +1,161 @@
+.background-image {
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: changeBackground 10s infinite;
+  }
+  
+  @keyframes changeBackground {
+    0% {
+      background-image: url(doctor1.jpg);
+    }
+    33% {
+      background-image: url(doctor2.jpg);
+    }
+    66% {
+      background-image: url(doctor3.jpg);
+    }
+    100% {
+      background-image: url(doctor4.jpg);
+    }
+  }
+  
+  @import url('HOSPITAL1.jpg');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.sidebar-container {
+    width: 220px;
+    height: calc(105vh - 5vh);
+    background-color: #191e24;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 2px 0 10px rgba(128, 128, 128, 0.507);
+    transition: 0.5s;
+    z-index: 10;
+    position: absolute;
+}
+
+.toggle {
+    position: absolute;
+    top: 10px;
+    right: -37px;
+    z-index: -1;
+    background-color: #191e24;
+    height: 35px;
+    width: 40px;
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.lines {
+    width: 60%;
+    height: 2px;
+    display: block;
+    background-color: grey;
+    padding-right: 10px;
+}
+
+.toggle-function {
+    transform: translate(-220px, 0);
+    transform: 0.5s;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    margin-bottom: 50px;
+    background-image: url(HOSPITAL1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.profile-card .tittle {
+    margin-top: 5px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #191e24;
+}
+
+.profile-card .subtittle {
+    font-weight: 500;
+    font-size: medium;
+    letter-spacing: 5px;
+}
+
+.links-list li a,.signout a,.social-media-icons {
+    color: lightgray;
+    margin-left: 25px;
+    display: block;
+    font-weight: 300;
+    padding: 5px 0;
+    font-size: medium;
+    transition: ease-in-out 0.2s;
+}
+
+.links-list i, .signout i {
+    color: lightgray;
+    margin-right: 10px;
+}
+
+.links-list li :hover,.signout a:hover {
+    color: white;
+    font-weight: 600;
+    transition: ease-in-out 0.2s;
+}
+
+.links-list li {
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+.links-list li:nth-child(5) {  
+    padding-top: 10px;
+    border-top: 1px rgba(128, 128, 128, 0.15) solid;
+}
+
+.signout {
+    border-top: 1px rgba(128, 128, 128, 0.15) solid;
+    padding: 10px 0;
+}
+
+.social-media-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: large;
+    padding: 20px 0;
+}
+
+.social-media-icons a {
+    color: lightgray;
+}
+
+.social-media-icons a:hover {
+    color: white ;
+}
