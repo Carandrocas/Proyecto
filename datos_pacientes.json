@@ -1,0 +1,45 @@
+[
+    {
+      "nombre": "alejandro",
+      "apellido": "alvares",
+      "cedula": "1234567890",
+      "edad": "24",
+      "telefono": "316272751",
+      "especialidad": "Medicina general "
+    },
+    {
+        "nombre": "camilo",
+        "apellido": "campos",
+        "cedula": "14525121",
+        "edad": "31",
+        "telefono": "322453112",
+        "especialidad": "Psicologia"
+    },
+    {
+        "nombre": "yolanda",
+        "apellido": "rios",
+        "cedula": "90008715",
+        "edad": "38",
+        "telefono": "321232322",
+        "especialidad": "Radiologia"
+    },
+    {
+        "nombre": "jeison",
+        "apellido": "jimenez",
+        "cedula": "102300212",
+        "edad": "29",
+        "telefono": "345111122",
+        "especialidad": "Medicina interna"
+    },
+    {
+        "nombre": "Milena",
+        "apellido": "Gamba",
+        "cedula": "110022312",
+        "edad": "32",
+        "telefono": "310998256",
+        "especialidad": "Odontologia"
+        
+    }
+  
+  ]
+  

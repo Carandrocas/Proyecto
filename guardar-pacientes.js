@@ -1,28 +1,29 @@
-const formularioDoctores = document.getElementById('registro-doctores-form')
-formularioDoctores.addEventListener('submit', (event) =>{
+const formularioPacientes = document.getElementById('registro-pacientes-form')
+formularioPacientes.addEventListener('submit', (event) =>{
 event.preventDefault();
-const datosDoctor = {
+const datosPaciente = {
 nombre: document.getElementById('nombre').value,
 apellido: document.getElementById('apellido').value,
 cedula: document.getElementById('cedula').value,
+edad: document.getElementById('edad').value,
+telefono : document.getElementById('telefono').value,
 especialidad: document.getElementById('especialidad').value,
-consultorio: document.getElementById('consultorio').value,
-correo: document.getElementById('correo').value,
+
 }
 
-guardarCookies(datosDoctor)
-const confirmacion = confirm("¿Desea ver los datos de los doctores?")
+guardarCookies(datosPaciente)
+const confirmacion = confirm("¿Desea ver los datos de los pacientes?")
 if(confirmacion == true){
-window.location.href = "doctores.html"
+window.location.href = "pacientes.html"
 }else{
-formularioDoctores.reset()
+formularioPacientes.reset()
 }
 
 })
 
-function guardarCookies(doctor) {
+function guardarCookies(paciente) {
 //las cookies antiguas
-let datos = obtenerCookie("doctores");
+let datos = obtenerCookie("pacientes");
 if (datos === "") {
 datos = "[]";
 }
@@ -30,9 +31,9 @@ datos = "[]";
 let pacientesObjetos = []
 pacientesObjetos = JSON.parse(datos);
 //añadir nuevas
-pacientesObjetos.push(doctor);
+pacientesObjetos.push(paciente);
 const jsonDatos = JSON.stringify(pacientesObjetos)
-cambiarCookie("doctores", jsonDatos)
+cambiarCookie("pacientes", jsonDatos)
 
 }
 
